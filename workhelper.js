@@ -15,7 +15,7 @@ const update_details = (data_to_update, id) =>
         reject(err);
       } else {
         resolve({
-          message:"Data Updated"
+          message: "Data Updated",
         });
       }
     });
@@ -23,37 +23,37 @@ const update_details = (data_to_update, id) =>
     .then((response) => {
       return response;
     })
-    .catch((error) =>{
-      
+    .catch((error) => {
       return {
-      error:error.message
-    }});
+        error: error.message,
+      };
+    });
 
-
-    const update_squad_details = (data_to_update, id) =>
-    new Promise((resolve, reject) => {
-      delete data_to_update.squad_id;
-      var update_squad_detail_query = "UPDATE vmsback.squad SET ? WHERE squad_id= ?";
-      var data = [data_to_update, id];
-      pool.query(update_squad_detail_query, data, function (err, rows, fields) {
-        if (err) {
-          reject(err);
-        } else {
-          resolve({
-            message:"Data Updated"
-          });
-        }
-      });
+const update_squad_details = (data_to_update, id) =>
+  new Promise((resolve, reject) => {
+    delete data_to_update.squad_id;
+    var update_squad_detail_query =
+      "UPDATE vmsback.squad SET ? WHERE squad_id= ?";
+    var data = [data_to_update, id];
+    pool.query(update_squad_detail_query, data, function (err, rows, fields) {
+      if (err) {
+        reject(err);
+      } else {
+        resolve({
+          message: "Data Updated",
+        });
+      }
+    });
+  })
+    .then((response) => {
+      return response;
     })
-      .then((response) => {
-        return response;
-      })
-      .catch((error) =>{
-        console.log(error)
-        return {
-        error:error.message
-      }});
-
+    .catch((error) => {
+      console.log(error);
+      return {
+        error: error.message,
+      };
+    });
 
 const get_squad_request_external_data = (user_id) =>
   new Promise((resolve, reject) => {
@@ -154,7 +154,7 @@ const add_archive_work_data = (data) =>
         reject(err);
       } else {
         resolve({
-          message:"data has been archived for "+ work_id
+          message: "data has been archived for " + work_id,
         });
       }
     });
@@ -168,16 +168,16 @@ const add_archive_work_data = (data) =>
 
 const createSquadWorkClient = (ClientDetails) =>
   new Promise((resolve, reject) => {
-    const Work_client_id=ClientDetails.work_client_id = uuidv4();
+    const Work_client_id = (ClientDetails.work_client_id = uuidv4());
     const add_data_query = "INSERT INTO vmsback.squad_work_client SET ?";
-    
+
     pool.query(add_data_query, ClientDetails, function (err, row, fields) {
       if (err) {
         reject(err);
       } else {
         resolve({
-          message: "data added to squadWorkClient table" ,
-          work_client_id: Work_client_id
+          message: "data added to squadWorkClient table",
+          work_client_id: Work_client_id,
         });
       }
     });
@@ -194,14 +194,13 @@ const createSquadWorkClient = (ClientDetails) =>
       };
     });
 
-
 const updateSquadWorkClient = (data_to_update, work_client_id) =>
   new Promise((resolve, reject) => {
     delete data_to_update.work_client_id;
-    
+
     const update_squad_work_client_query =
       "UPDATE vmsback.squad_work_client SET ? WHERE work_client_id=?";
-    
+
     const parameter = [data_to_update, work_client_id];
     pool.query(
       update_squad_work_client_query,
@@ -211,9 +210,8 @@ const updateSquadWorkClient = (data_to_update, work_client_id) =>
           reject(err);
         } else {
           resolve({
-            message: "Data updated for Work_Client_id:" ,
-            work_client_id: work_client_id
-            
+            message: "Data updated for Work_Client_id:",
+            work_client_id: work_client_id,
           });
         }
       }
@@ -230,7 +228,6 @@ const updateSquadWorkClient = (data_to_update, work_client_id) =>
         error: error.message,
       };
     });
-
 
 const viewSquadClientImg = (squad_id) =>
   new Promise((resolve, reject) => {
@@ -257,48 +254,62 @@ const viewSquadClientImg = (squad_id) =>
       return error;
     });
 
-  const viewAllProjects = (squad_id) =>
-    new Promise((resolve, reject) => {
-      const viewAllProjectsQuery = `SELECT work_id, work_title FROM vmsback.work WHERE squad_id=?`;
-
-      pool.query(viewAllProjectsQuery, squad_id, function (err, rows, fields) {
-        if (err) {
-          reject({ error: err.message });
-        } else {
-          resolve(rows);
-        }
-      });
-    })
-      .then((response) => {
-        return response;
-      })
-      .catch((error) => {
-        console.log(error);
-        return {error:error.message}
-      });
-
-  const get_all_work_resources=(work_id)=>
-    new Promise((resolve, reject) => {
-      const get_resources_query="SELECT resource_id,role_name,currency,amount FROM vmsback.work_resource WHERE work_id=?"
-
-      pool.query(get_resources_query,work_id,function(err,rows,fields){
-        if(err){
-          reject({error:err.message})
-        }else{
-          resolve(rows);
-        }
-      })
+const viewAllProjects = (squad_id) =>
+  new Promise((resolve, reject) => {
     
+    const viewAllProjectsQuery = 'SELECT work_id, work_title FROM vmsback.work WHERE squad_id=?';
+
+    pool.query(viewAllProjectsQuery, squad_id, function (err, rows, fields) {
+      if (err) 
+      {
+        reject({ error: err.message });
+      } 
+      else 
+      {
+        resolve(rows);
+      }
+    });
   })
-  .then((response)=>{
-    return response;
+    .then((response) => 
+    {
+      return response;
+    })
+    .catch((error) => 
+    {
+      console.log("Error From viewAllProject ",error);
+      
+      return { error: error.message };
+    });
+
+
+const getAllWorkResources = (work_id) =>
+  new Promise((resolve, reject) => {
+    
+    const get_resources_query ="SELECT resource_id,role_name,currency,amount FROM vmsback.work_resource WHERE work_id=?";
+
+    pool.query(get_resources_query, work_id, function (err, rows, fields) {
+      if (err)
+      {
+        reject({ error: err.message });
+      } 
+      else 
+      {
+        resolve(rows);
+      }
+    });
   })
-  .catch((error)=>{
-    console.log("Error from get_all_work_resources==> ",error);
-    return {
-      error:error.message
-    }
-  })
+    .then((response) => 
+    {
+      return response;
+    })
+    .catch((error) => 
+    {
+      
+      console.log("Error from getAllWorkResources==> ", error);
+      
+      return {error: error.message};
+    });
+
 
 module.exports = {
   update_details,
@@ -312,5 +323,5 @@ module.exports = {
   updateSquadWorkClient,
   viewSquadClientImg,
   viewAllProjects,
-  get_all_work_resources
+  getAllWorkResources,
 };

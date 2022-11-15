@@ -111,30 +111,42 @@ router.post("/viewSquadClientImg",async(req,res)=>{
   return res.send(viewProfile)
 })
 
-router.post("/viewAllProjects",async(req,res)=>{
-  if(!req.body.squad_id){
+
+
+router.post("/viewAllProjects",async(req,res)=>
+{
+  if(!req.body.squad_id)
+  {
     return res.status(200).send({message:`squad_id missing`})
   }
+  
   const view=await workhelper.viewAllProjects(req.body.squad_id);
 
-  if(view.hasOwnProperty('error')){
+  if(view.hasOwnProperty('error'))
+  {
     return res.status(500).send({error:view.error})
   }
   return res.send(view);
 })
 
-router.post("/allWorkResource",async(req,res)=>{
-  if(!req.body.work_id){
+
+
+
+router.post("/allWorkResource",async(req,res)=>
+{
+  if(!req.body.work_id)
+  {
     return res.status(200).send({message:'work_id missing'})
   }
-  const viewResource=await workhelper.get_all_work_resources(req.body.work_id);
+  
+  const viewResource=await workhelper.getAllWorkResources(req.body.work_id);
 
-  if(viewResource.hasOwnProperty('error')){
+  if(viewResource.hasOwnProperty('error'))
+  {
     return res.status(500).send({error:viewResource.error})
   }
-
   return res.send(viewResource);
-
 })
+
 
 router.listen(8000);
