@@ -261,54 +261,97 @@ const viewAllProjects = (squad_id) =>
 
     pool.query(viewAllProjectsQuery, squad_id, function (err, rows, fields) {
       if (err) 
-      {
-        reject({ error: err.message });
-      } 
+        {
+          reject({ error: err.message });
+        } 
       else 
-      {
-        resolve(rows);
-      }
+        {
+          resolve(rows);
+        }
     });
   })
     .then((response) => 
-    {
-      return response;
-    })
+      {
+        return response;
+      })
     .catch((error) => 
-    {
-      console.log("Error From viewAllProject ",error);
+      {
+        console.log("Error From viewAllProject WorkHelper ==> ",error);
       
-      return { error: error.message };
-    });
+        return { error: error.message };
+      });
 
 
 const getAllWorkResources = (work_id) =>
   new Promise((resolve, reject) => {
     
-    const get_resources_query ="SELECT resource_id,role_name,currency,amount FROM vmsback.work_resource WHERE work_id=?";
+    const getResourcesQuery ="SELECT resource_id,role_name,currency,amount FROM vmsback.work_resource WHERE work_id=?";
 
-    pool.query(get_resources_query, work_id, function (err, rows, fields) {
+    pool.query( getResourcesQuery , work_id,  function (err, rows, fields) {
       if (err)
-      {
-        reject({ error: err.message });
-      } 
+        {
+          reject({ error: err.message });
+        } 
       else 
-      {
-        resolve(rows);
-      }
+        {
+          resolve(rows);
+        }
     });
   })
     .then((response) => 
-    {
-      return response;
-    })
+      {
+        return response;
+      })
     .catch((error) => 
-    {
+      {
       
-      console.log("Error from getAllWorkResources==> ", error);
+        console.log("Error from getAllWorkResources WorkHelper ==> ", error);
       
-      return {error: error.message};
-    });
+        return { error : error.message };
+      });
+
+
+  const viewSquadClients = (main_squad_id) =>
+    new Promise((resolve, reject) => {
+      
+      const viewClientsQuery = `SELECT Client.client_squad_id, Squad.squad_name 
+        FROM 
+      vmsback.squad_work_client Client 
+        INNER JOIN 
+      vmsback.squad Squad 
+        ON 
+      Client.client_squad_id = Squad.squad_id 
+        WHERE 
+      Client.main_squad_id= ? `
+
+      pool.query(viewClientsQuery, main_squad_id, function( err, rows, fields ){
+        if(err)
+          {
+            reject(err);
+          }
+        else
+          {
+            resolve(rows);
+          }
+      })
+    })
+
+    .then((response)=>
+      {
+        return response;
+      })
+
+    .catch((error)=>
+      {
+        console.log("Error From viewSquadClients WorkHelper ==> ", error)
+
+        return { error : error.message }
+      })
+
+  
+  const updateInvoice=()=>new Promise((resolve, reject) => {
+    
+  })
 
 
 module.exports = {
@@ -324,4 +367,5 @@ module.exports = {
   viewSquadClientImg,
   viewAllProjects,
   getAllWorkResources,
+  viewSquadClients
 };

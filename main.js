@@ -70,7 +70,7 @@ router.get("/archive_work", async (req, res) => {
 
 router.post("/createSquadWorkClient", async (req, res) => {
   if (!req.body.work_id || !req.body.main_squad_id || !req.body.client_squad_id) {
-    return res.status(200).send({ message: `id missing` });
+    return res.status(200).send({ message: `Mandatory field(s):'work_id','main_squad_id','client_squad_id'` });
   } 
  
   var data = req.body;
@@ -86,7 +86,7 @@ router.post("/createSquadWorkClient", async (req, res) => {
 
 router.post("/updateSquadWorkClient", async (req, res) => {
   if (!req.body.work_client_id) {
-    return res.status(200).send({ message: `id missing` });
+    return res.status(200).send({ message: `work_client_id missing` });
   }
 
   const updateSquadWork = await workhelper.updateSquadWorkClient(
@@ -148,5 +148,21 @@ router.post("/allWorkResource",async(req,res)=>
   return res.send(viewResource);
 })
 
+router.post("/viewAllClients", async(req,res)=>{
+  if(!req.body.main_squad_id)
+  {
+    return res.status(200).send({message:'main_squad_id missing'})
+  }
+  
+  const viewClients= await workhelper.viewSquadClients(req.body.main_squad_id)
+
+  if(viewClients.hasOwnProperty('error'))
+  {
+    return res.status(500).send({error:viewClients.error})
+
+  }
+  return res.send(viewClients)
+
+})
 
 router.listen(8000);
