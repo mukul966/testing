@@ -148,13 +148,16 @@ router.post("/allWorkResource",async(req,res)=>
   return res.send(viewResource);
 })
 
-router.post("/viewAllClients", async(req,res)=>{
-  if(!req.body.main_squad_id)
+
+
+router.post("/viewAllClients", async(req,res)=>
+{
+  if(!req.body.squad_name)
   {
-    return res.status(200).send({message:'main_squad_id missing'})
+    return res.status(200).send({message:'squad_name missing'})
   }
   
-  const viewClients= await workhelper.viewSquadClients(req.body.main_squad_id)
+  const viewClients= await workhelper.viewSquadClients(req.body.squad_name)
 
   if(viewClients.hasOwnProperty('error'))
   {

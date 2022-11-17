@@ -229,30 +229,30 @@ const updateSquadWorkClient = (data_to_update, work_client_id) =>
       };
     });
 
-const viewSquadClientImg = (squad_id) =>
-  new Promise((resolve, reject) => {
-    const profileimg_query = `SELECT s.squad_id,s.squad_name,c.client_id, c.client_name, i.imgid, i.imgname
-      FROM
-  vmsback.squad s
-      INNER JOIN
-  vmsback.squad_client c ON s.squad_id = c.squad_id
-      INNER JOIN
-  vmsback.squad_client_image i ON c.client_id = i.client_id  WHERE s.squad_id=?`;
+// const viewSquadClientImg = (squad_id) =>
+//   new Promise((resolve, reject) => {
+//     const profileimg_query = `SELECT s.squad_id,s.squad_name,c.client_id, c.client_name, i.imgid, i.imgname
+//       FROM
+//   vmsback.squad s
+//       INNER JOIN
+//   vmsback.squad_client c ON s.squad_id = c.squad_id
+//       INNER JOIN
+//   vmsback.squad_client_image i ON c.client_id = i.client_id  WHERE s.squad_id=?`;
 
-    pool.query(profileimg_query, squad_id, function (err, rows, fields) {
-      if (err) {
-        reject(err);
-      } else {
-        resolve(rows);
-      }
-    });
-  })
-    .then((response) => {
-      return response;
-    })
-    .catch((error) => {
-      return error;
-    });
+//     pool.query(profileimg_query, squad_id, function (err, rows, fields) {
+//       if (err) {
+//         reject(err);
+//       } else {
+//         resolve(rows);
+//       }
+//     });
+//   })
+//     .then((response) => {
+//       return response;
+//     })
+//     .catch((error) => {
+//       return error;
+//     });
 
 const viewAllProjects = (squad_id) =>
   new Promise((resolve, reject) => {
@@ -311,20 +311,20 @@ const getAllWorkResources = (work_id) =>
       });
 
 
-  const viewSquadClients = (main_squad_id) =>
+  const viewSquadClients = (squad_name) =>
     new Promise((resolve, reject) => {
       
       const viewClientsQuery = `SELECT Client.client_squad_id, Squad.squad_name 
         FROM 
-      vmsback.squad_work_client Client 
+      vmsback.squad Squad
         INNER JOIN 
-      vmsback.squad Squad 
+      vmsback.squad_work_client Client
         ON 
       Client.client_squad_id = Squad.squad_id 
         WHERE 
-      Client.main_squad_id= ? `
+      Squad.squad_name LIKE ? `
 
-      pool.query(viewClientsQuery, main_squad_id, function( err, rows, fields ){
+      pool.query(viewClientsQuery, ['%' + squad_name + '%'], function( err, rows, fields ){
         if(err)
           {
             reject(err);
@@ -349,8 +349,13 @@ const getAllWorkResources = (work_id) =>
       })
 
   
+
+
   const updateInvoice=()=>new Promise((resolve, reject) => {
     
+    const updateInvoiceQuery="UPDATE vmsback.invoice_data SET ? WHERE squad_id= ?"
+
+    pool.query(updateInvoice,)
   })
 
 
@@ -364,7 +369,7 @@ module.exports = {
   delete_work_data,
   createSquadWorkClient,
   updateSquadWorkClient,
-  viewSquadClientImg,
+  //viewSquadClientImg,
   viewAllProjects,
   getAllWorkResources,
   viewSquadClients
