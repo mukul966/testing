@@ -1,0 +1,153 @@
+{
+	"squad_id": "S01",
+	"name": "Squad Name",
+	"type": "normal",
+	"category": "UX/UI & Designing",
+	"tag_line": "Change the world",
+	"default_currency": "USD $",
+	"city": "Noida",
+	"state": "UP",
+	"country": "India",
+	"ratings": 4.2,
+	"members": {
+		"filled": true,
+		"no_of_items": 4,
+		"member_list": [
+			{
+				"user_id": "U01",
+				"member_role": "owner",
+				"image_id": "I01",
+				"user_name": "User1",
+				"user_handle": "user1"
+			},
+			{ "user_id": "U02", "member_role": "admin", "image_id": "I02" },
+			{ "user_id": "U03", "member_role": "member", "image_id": "I03" },
+			{ "user_id": "U04", "member_role": "member", "image_id": "I04" }
+		]
+	},
+	"general": {
+		"rejected": [0, 1, 2, 3, 4],
+		"order": [0, 1, 2, 3, 4, 5, 6, 7],
+		"hidden": [],
+		"more_info": {
+			"filled": true,
+			"established": 2020,
+			"speciality": ["AI", "ML", "Oracle", "salesforce"],
+			"industry": "Information Technology"
+		},
+		"offered_services": {
+			"filled": true,
+			"info": "This is test data and not be used in real application pls dont use this and make sure the data written here is not used anywhere else in the application because this is just dummy data for testing.",
+			"no_of_items": 2,
+			"services": [
+				{
+					"service_id": "S01",
+					"logo_id": "https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png",
+					"service_name": "front_end_development",
+					"software": "Flutter,Python,Angular",
+					"primary_service": 1
+				},
+				{
+					"service_id": "S02",
+					"logo_id": "https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png",
+					"service_name": "back_end_development",
+					"software": "Flutter,Python,Angular",
+					"primary_service": 0
+				}
+			]
+		},
+		"about_us": {
+			"filled": false,
+			"content": "This is test data and not be used in real application pls dont use this and make sure the data written here is not used anywhere else in the application because this is just dummy data for testing.",
+			"vision": "Lorem ipsum dolor"
+		},
+		"projects": {
+			"filled": true,
+			"completed": 12,
+			"ongoing": 8,
+			"in_line": 3,
+			"no_of_items": 5,
+			"project_list": [
+				{
+					"project_id": "P02",
+					"squad_id": "Sx02",
+					"logo_id": "Lx02",
+					"name": "Google App development",
+					"category": "Front end development",
+					"description": "A squad to develop",
+					"project_status": "completed",
+					"percentage": 45,
+					"candidature": "Squad Project",
+					"currency": "$",
+					"skills": "flutter,firebase",
+					"budget": "500",
+					"payment": "lumpsum",
+					"start_date": "2020-11-01",
+					"end_date": "2020-12-01"
+				}
+			]
+		},
+		"revenue": {
+			"filled": true,
+			"total_earning": 12000,
+			"net_earning": 8000,
+			"unreleased": 4000
+		},
+		"linked_account": {
+			"filled": true,
+			"facebook": "https://www.facebook.com/",
+			"twitter": null,
+			"linkdin": "https://www.linkedin.com/signup",
+			"instagram": "https://www.instagram.com/",
+			"github": "https://github.com/",
+			"behance": null,
+			"dribble": null,
+			"pinterest": null
+		},
+		"ratings": {
+			"filled": true,
+			"no_of_items": 2,
+			"all_rating": 20,
+			"avg_rating": 3.5,
+			"five": 5,
+			"four": 5,
+			"three": 5,
+			"two": 3,
+			"one": 2,
+			"review_list": [
+				{
+					"review_id": 0,
+					"user_id": "U02",
+					"rating": 4.0,
+					"comment": "great professional with great skills"
+				}
+			]
+		},
+		"contact_detail": {
+			"filled": true,
+			"country_code": "IN",
+			"calling_code": "91",
+			"contact_number": "85856036142",
+			"email_id": "vanshajsh@gmail.com",
+			"website": "https//www.vanshaj.com"
+		}
+	},
+	"background_image_id": {
+		"bgimgurl": "https://media-exp1.licdn.com/dms/image/C4D16AQEpfdgxzouHTg/profile-displaybackgroundimage-shrink_200_800/0/1619467037719?e=1647475200&v=beta&t=ibA0OKx2ndcKeue7BkgBgXYnGTbASogSig4BHs3ftpY",
+		"bgimgrotation": 0.0,
+		"bgimgposition1": 0.0,
+		"bgimgposition2": 0.0,
+		"bgimgscale": 0.9,
+		"bgimgrotationfocuspoint1": 0.0,
+		"bgimgrotationfocuspoint2": 0.0
+	},
+	"profile_picture_image_id": {
+		"profimgurl": "https://media-exp1.licdn.com/dms/image/C5603AQE4c2ZE16sHVw/profile-displayphoto-shrink_200_200/0/1589800767701?e=1647475200&v=beta&t=3DKyDInbCjtZNwpqMW8777yi1fX3irJnnLFpDKwwA8o",
+		"profimgrotation": 0.0,
+		"profimgposition1": 0.0,
+		"profimgposition2": 5.0,
+		"profimgscale": 0.5,
+		"profimgrotationfocuspoint1": 157.8,
+		"profimgrotationfocuspoint2": 599.6
+	}
+}

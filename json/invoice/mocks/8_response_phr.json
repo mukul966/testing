@@ -1,0 +1,28 @@
+{
+    "invoice_data": {
+        "success": true,
+        "data": {
+            "invoice_id": "8ef259c8-fcbf-4f76-b21a-f8b9e7380a0c",
+            "work_id": "W01",
+            "invoice_type": "Project Invoice",
+            "invoice_status": "drafts",
+            "work_title": "Mobile Application Development",
+            "project_type": "Project hourly rate",
+            "invoice_number": "1a62ee5f-a269-45b2-b496-74eb62a1300c",
+            "client_squad_id": "SQ1",
+            "squad_name": "workwalladmin",
+            "billing_frequency": null,
+            "billing_start_date": null,
+            "billing_end_date": null,
+            "due_date": null,
+            "date_of_issue": null,
+            "project_hourly_rate": {
+                "currency": "$",
+                "amount": 200
+            },
+            "fixed_fee": null
+        }
+    },
+    "milestones": null,
+    "resources": null
+}

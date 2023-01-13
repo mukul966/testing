@@ -1,0 +1,17 @@
+{
+    "i": {
+        "client_squad_id": "CSQ1"
+    },
+    "o": {
+        "vendor_squad_id": "VSQ1",
+        "amount": 1200,
+        "currency": "$"
+    },
+    "i2": {
+        "client_squad_id": "CSQ1"
+    },
+    "o2": {
+        "amount": 1200,
+        "currency": "$"
+    }
+}

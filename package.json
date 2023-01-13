@@ -1,19 +1,41 @@
 {
-  "dependencies": {
-    "dayjs": "^1.11.6",
-    "express": "^4.18.2",
-    "mysql": "^2.18.1",
-    "nodemon": "^2.0.20",
-    "uuid": "^9.0.0"
-  },
-  "name": "api_2",
+  "name": "p2",
   "version": "1.0.0",
-  "main": "main.js",
+  "description": "Package for vms backend application",
+  "main": "work.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "author": "vivek sharma",
   "license": "ISC",
-  "description": ""
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "@google-cloud/storage": "^5.20.5",
+    "@hapi/joi": "^17.1.1",
+    "@sendgrid/mail": "^7.6.2",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.1.1",
+    "crypto-random-string": "^4.0.0",
+    "dayjs": "^1.11.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.18.2",
+    "express-session": "^1.17.1",
+    "firebase-admin": "^11.4.1",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^9.0.0",
+    "memorystore": "^1.6.6",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.20",
+    "pdf-creator-node": "^2.2.2",
+    "pug": "^3.0.2",
+    "request": "^2.88.2",
+    "uuid": "^3.4.0"
+  }
 }

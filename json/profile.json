@@ -1,0 +1,236 @@
+{
+	"user_id": "U01",
+	"default_currency": "USD $",
+	"user_name": "Ravinder Kulsari",
+	"user_handle": "@ravinderproso",
+	"profession": "Co-founder",
+	"company_name": "Proso.ai",
+	"city": "Noida",
+	"state": "UP",
+	"country": "India",
+	"followers": 568,
+	"projects": 16,
+	"squads": 8,
+	"profile_completion": 32,
+	"general": {
+		"rejected": [],
+		"order": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+		"multiple": [],
+		"hidden": [],
+
+		"about_me": {
+			"filled": true,
+			"content": "This is test data and not be used in real application pls dont use this and make sure the data written here is not used anywhere else in the application because this is just dummy data for testing."
+		},
+
+		"skills": {
+			"filled": true,
+			"no_of_items": 1,
+			"skill_list": [
+				{
+					"skill_id": 3,
+					"logo_id": "https://logowik.com/content/uploads/images/flutter5786.jpg",
+					"name": "Flutter",
+					"description": "FrontEnd Developer",
+					"duration": "2M & 1Y"
+				}
+			]
+		},
+
+		"projects": {
+			"filled": true,
+			"complete": 12,
+			"ongoing": 8,
+			"scheduled": 3,
+			"no_of_items": 5,
+			"project_list": [
+				{
+					"project_id": 0,
+					"user_id": "7875f023-c5a4-4447-94b5-1e9bc172bf7c",
+					"logo_id": "https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png",
+					"name": "Google App development",
+					"category": "Front end development",
+					"candidature": "Squad Project",
+					"description": "A squad to develop",
+					"project_status": "completed",
+					"skills": "flutter,firebase",
+					"budget": "500",
+					"payment": "lumpsum",
+					"currency": "$",
+					"start_date": "2020/11/01",
+					"end_date": "2020/12/21"
+				}
+			]
+		},
+
+		"revenue": {
+			"filled": true,
+			"total_earning": 12000,
+			"net_earning": 8000,
+			"unreleased": 4000
+		},
+
+		"work_experience": {
+			"filled": true,
+			"no_of_items": 5,
+			"experience_list": [
+				{
+					"experience_id": 0,
+					"logo_id": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Microsoft_logo.jpg/900px-Microsoft_logo.jpg",
+					"name": "Microsoft",
+					"post": "SDE 3 FullStack",
+					"employment_type": "permanent",
+					"description": "Developing perfect solutions for all",
+					"start_date": "2020/11/01",
+					"end_date": "2020/12/21"
+				}
+			]
+		},
+
+		"education": {
+			"filled": true,
+			"no_of_items": 5,
+			"education_list": [
+				{
+					"education_id": 0,
+					"logo_id": "https://1000logos.net/wp-content/uploads/2017/02/Harvard-Logo-500x423.png",
+					"name": "Havard University",
+					"course": "Mba Operations",
+					"field": "It",
+					"description": "mba in it sector",
+					"start_date": "2020/11/01",
+					"end_date": "2020/12/21"
+				}
+			]
+		},
+
+		"licences": {
+			"filled": true,
+			"no_of_items": 10,
+			"licences_list": [
+				{
+					"license_id": 0,
+					"logo_id": "https://www.designbust.com/download/1060/png/microsoft_logo_transparent512.png",
+					"name": "Microsoft Code Developer",
+					"license_number": "Microsoft-168058",
+					"issuing_authority": "Microsoft",
+					"description": "advance coding course",
+					"start_date": "2020/11/01",
+					"end_date": "2020/12/21"
+				}
+			]
+		},
+
+		"visas": {
+			"filled": true,
+			"no_of_items": 2,
+			"visa_list": [
+				{
+					"visa_id": 0,
+					"logo_id": "https://png.pngitem.com/pimgs/s/131-1313875_flag-of-canada-transparent-canada-flag-png-png.png",
+					"name": "Canada Work Visa H3B",
+					"issuing_authority": "Canada Govt",
+					"credential_id": "122244",
+					"description": "Working Visa for canada",
+					"start_date": "2020/11/01",
+					"end_date": "2020/12/21"
+				}
+			]
+		},
+
+		"interest": {
+			"filled": true,
+			"no_of_items": 2,
+			"interest_list": [
+				{
+					"interest_id": 0,
+					"logo_id": "https://www.pngrepo.com/png/7248/180/singer.png",
+					"name": "Singing",
+					"type": "Rap"
+				}
+			]
+		},
+
+		"language": {
+			"filled": true,
+			"no_of_items": 3,
+			"language_list": [
+				{
+					"language_id": 0,
+					"language": "Hindi",
+					"medium": "Written and Spoken",
+					"level": "advanced"
+				}
+			]
+		},
+
+		"linked_account": {
+			"filled": true,
+			"facebook": "https://www.facebook.com/",
+			"twitter": null,
+			"linkedin": "https://www.linkedin.com/signup",
+			"github": "https://github.com/",
+			"behance": null,
+			"dribble": null,
+			"pinterest": null
+		},
+
+		"ratings": {
+			"filled": true,
+			"all_rating": 20,
+			"avg_rating": 3.5,
+			"five": 5,
+			"four": 5,
+			"three": 5,
+			"two": 3,
+			"one": 2,
+			"review_list": [
+				{
+					"review_id": 0,
+					"user_id": "U02",
+					"rating": 4.0,
+					"comment": "great professional with great skills"
+				},
+				{
+					"id": 0,
+					"name": "Amir Khan",
+					"user_id": "002",
+					"upload_date": "2022-01-10",
+					"comment": "great professional with great skills",
+					"rating": 4.0
+				}
+			]
+		},
+
+		"contact_detail": {
+			"filled": true,
+			"country_code": "IN",
+			"calling_code": "91",
+			"contact_number": "85856036142",
+			"email_id": "vanshajsh@gmail.com",
+			"website": "https//www.vanshaj.com"
+		},
+		"background_image": {
+			"bgimgid": "I01",
+			"bgimgname": "test.png",
+			"bgimgurl": "https://media-exp1.licdn.com/dms/image/C4D16AQEpfdgxzouHTg/profile-displaybackgroundimage-shrink_200_800/0/1619467037719?e=1647475200&v=beta&t=ibA0OKx2ndcKeue7BkgBgXYnGTbASogSig4BHs3ftpY",
+			"bgimgrotation": 0.0,
+			"bgimgposition1": -4.0,
+			"bgimgposition2": 0.0,
+			"bgimgscale": 1.0,
+			"bgimgrotationfocuspoint1": 182.2,
+			"bgimgrotationfocuspoint2": 324.0
+		},
+		"profile_image": {
+			"profimgid": "I01",
+			"profimgname": "test.png",
+			"profimgurl": "https://media-exp1.licdn.com/dms/image/C5603AQE4c2ZE16sHVw/profile-displayphoto-shrink_200_200/0/1589800767701?e=1647475200&v=beta&t=3DKyDInbCjtZNwpqMW8777yi1fX3irJnnLFpDKwwA8o",
+			"profimgrotation": 0.0,
+			"profimgposition1": 0.0,
+			"profimgposition2": 0.0,
+			"profimgscale": 1.2,
+			"profimgrotationfocuspoint1": 201.1,
+			"profimgrotationfocuspoint2": 377.8
+		}
+	}
+}

@@ -1,0 +1,89 @@
+{
+    "i": {
+        "invoice_id": "I01"
+    },
+    "o": {
+        "resources": [
+            {
+                "resource_id": "45c1b9fa-df43-4ad2-9792-419b7aa253ed",
+                "user_id": "IdfHNJs5DGPGY6JA6i4F06iI08x2",
+                "user_name": "Michael Josh",
+                "role_name": "TL",
+                "currency": "$",
+                "hourly_rate": 111,
+                "hours": 12,
+                "total_amount": 1332
+            },
+            {
+                "resource_id": "a6a16db6-5cdd-42cb-b595-96c9ff24a3b2",
+                "user_id": "iSHOWv6SC6XzClAp5v07yKxXHs83",
+                "user_name": "Jacob Smith",
+                "role_name": "PM",
+                "currency": "$",
+                "hourly_rate": 80,
+                "hours": 20,
+                "total_amount": 1600
+            }
+        ],
+        "billing_add_ons": [
+            {
+                "category": "tax",
+                "name": "G.S.T",
+                "value": 18,
+                "operation": "addition default-null",
+                "amount": 12.3
+            },
+            {
+                "category": "tax",
+                "name": "C.G.S.T",
+                "value": 18,
+                "operation": "addition default-null",
+                "amount": 12.3
+            },
+            {
+                "category": "discount",
+                "name": "Corporate discount",
+                "value": 15,
+                "operation": "addition default-null",
+                "amount": 9.3
+            },
+            {
+                "category": "miscellaneous_charges",
+                "name": "Gateway charges",
+                "value": 15,
+                "operation": "addition default-null",
+                "amount": 9.3
+            }
+        ],
+        "grand_total": {
+            "currency": "USD",
+            "total_billable_amount": "2240.00",
+            "total_tax": "403.2",
+            "total_discount": 64,
+            "miscellaneous_charges": 2222,
+            "amount": "2378.88"
+        },
+        "milestones": [
+            {
+                "milestone_id": "04442f7e-e969-4889-9475-2c898d130f03",
+                "work_id": "b08bdd2a-f65f-4f0e-bbc2-23b077f3a063",
+                "name": "Testing",
+                "currency": null,
+                "amount": 100,
+                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                "created_at": "2022-11-30T11:57:03.000Z",
+                "updated_at": "2022-11-30T11:57:03.000Z"
+            },
+            {
+                "milestone_id": "d887a930-3930-4428-a5cb-b5d3ac19834d",
+                "work_id": "b08bdd2a-f65f-4f0e-bbc2-23b077f3a063",
+                "name": "App Development ",
+                "currency": null,
+                "amount": 200,
+                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                "created_at": "2022-11-30T11:57:03.000Z",
+                "updated_at": "2022-11-30T11:57:03.000Z"
+            }
+        ]
+    }
+}

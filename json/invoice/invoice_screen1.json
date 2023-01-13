@@ -1,0 +1,21 @@
+{
+    "invoice_number": "767863",
+    "invoice_id": "1234-5678-9123-4567",
+    "client": {
+        "squad_id": "SQ1",
+        "squad_name": "Beryl technologies"
+    },
+    "billing": {
+        "billing_frequency": "Weekly",
+        "billing_start_date": "05/12/21",
+        "billing_end_date": "12/12/21"
+    },
+    "invoice_type": "Project invoice",
+    "project": {
+        "work_id": "W01",
+        "work_name": "Berly Web app development"
+    },
+    "date_of_issue": "02/04/2022",
+    "payment_terms": "1 day after invoice generation",
+    "due_date": "09/04/2022"
+}

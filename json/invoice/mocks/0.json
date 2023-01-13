@@ -1,0 +1,11 @@
+{
+    "i": {
+        "vendor_squad_id": "SQ1"
+    },
+    "o": [
+        {
+            "invoice_id": "I01",
+            "invoice_number": "IN01"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+	"work_id": "W01",
+	"work_title": "Work 1",
+	"industry": "IT",
+	"description": "Lorem ipsum dolor",
+	"skills": [
+		"Nodejs",
+		"Django",
+		"Cpp",
+		"Python"
+	],
+	"project_type": 0,
+	"resource_hourly_rate": [
+		{
+			"resource_id": "R01",
+			"role_name": "Developer",
+			"currency": "$",
+			"amount": 200
+		},
+		{
+			"resource_id": "R02",
+			"role_name": "Designer",
+			"currency": "₹",
+			"amount": 300
+		}
+	],
+	"project_hourly_rate": {
+		"currency": "$",
+		"amount": 200
+	},
+	"fixed_fee": {
+		"currency": "$",
+		"amount": 40
+	},
+	"billing_details": {
+		"billing_currency": "USD",
+		"project_payment_frequency": "weekly",
+		"payment_terms": 1
+	},
+	"questionnaire": [
+		{
+			"question_id": "Q01",
+			"question": "This is a test question 1",
+			"type": "subjective",
+			"answer": "This is a test answer 1"
+		},
+		{
+			"question_id": "Q02",
+			"question": "This is a test question 2",
+			"type": "objective",
+			"option_1": "1-2yrs",
+			"option_2": "2-5yrs",
+			"option_3": null,
+			"option_4": null,
+			"answer": "1-2yrs"
+		},
+		{
+			"question_id": "Q03",
+			"question": "This is a test question 3",
+			"type": "subjective",
+			"answer": "This is a test answer 3"
+		}
+	],
+	"start_date": "2020/11/01",
+	"end_date": "2020/12/10"
+}

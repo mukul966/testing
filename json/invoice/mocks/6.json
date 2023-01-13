@@ -1,0 +1,49 @@
+{
+    "i": {
+        "invoice_id": "I01"
+    },
+    "o": {
+        "billing_add_ons": [
+            {
+                "category": "tax",
+                "name": "G.S.T",
+                "value": 18,
+                "operation": "addition default-null",
+                "amount": 12.3
+            },
+            {
+                "category": "tax",
+                "name": "C.G.S.T",
+                "value": 18,
+                "operation": "addition default-null",
+                "amount": 12.3
+            },
+            {
+                "category": "discount",
+                "name": "Corporate discount",
+                "value": 15,
+                "operation": "addition default-null",
+                "amount": 9.3
+            },
+            {
+                "category": "miscellaneous_charges",
+                "name": "Gateway charges",
+                "value": 15,
+                "operation": "addition default-null",
+                "amount": 9.3
+            }
+        ],
+        "grand_total": {
+            "currency": "USD",
+            "total_billable_amount": "2240.00",
+            "total_tax": "403.2",
+            "total_discount": 64,
+            "miscellaneous_charges": 2222,
+            "amount": "2378.88"
+        },
+        "project_hourly_rate": {
+            "hours": 79,
+            "amount": 1600
+        }
+    }
+}

@@ -1,0 +1,8 @@
+    [
+        {
+        "origin": ["https://vmsproject-f655f.appspot.com"],
+        "method": ["GET", "POST"],
+        "responseHeader": ["Content-Type"],
+        "maxAgeSeconds": 3600
+        }
+    ]

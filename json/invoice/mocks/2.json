@@ -1,0 +1,13 @@
+{
+    "invoice_type": "",
+    "input": {
+        "client_squad_id": "C01",
+        "vendor_squad_id": "V01"
+    },
+    "op": [
+        {
+            "project_id": "P01",
+            "project_name": "P1"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "i": {
+        "vendor_squad_id": "sq1"
+    },
+    "o": [
+        {
+            "client_squad_id": "SQ1",
+            "squad_name": "Beryl technologies"
+        }
+    ]
+}

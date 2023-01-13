@@ -1,0 +1,2 @@
+this repo contains all maps used throughout database.
+files are named in accordance with prototypes found in notion-prototypes. ex: maps used in create-work screens/prototypes are named as create-work.js 

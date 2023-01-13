@@ -1,0 +1,16 @@
+{
+    "invoice": {
+        "invoice_id": "8ef259c8-fcbf-4f76-b21a-f8b9e7380a0c",
+        "coustom_billing": [
+            {
+                "table": "invoice_billing_custom",
+                "id": "C1",
+                "item": "Item1",
+                "description": "Lorem ipsum",
+                "rate": 150,
+                "unit": 10,
+                "amount": 1500
+            }
+        ]
+    }
+}

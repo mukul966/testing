@@ -1,0 +1,59 @@
+{
+    "invoice_id": "767863",
+    "client": {
+        "squad_id": "SQ1",
+        "squad_name": "Beryl technologies"
+    },
+    "project": {
+        "work_id": "W01",
+        "work_name": "Berly Web app development"
+    },
+    "billing": {
+        "billing_frequency": "Weekly",
+        "billing_start_date": "05/12/21",
+        "billing_end_date": "12/12/21"
+    },
+    "date_of_issue": "02/04/2022",
+    "due_date": "09/04/2022",
+    "resources": [
+        {
+            "resource_id": "45c1b9fa-df43-4ad2-9792-419b7aa253ed",
+            "user_id": "IdfHNJs5DGPGY6JA6i4F06iI08x2",
+            "user_name": "Michael Josh",
+            "role_name": "TL",
+            "currency": "$",
+            "hourly_rate": 111,
+            "hours": 12,
+            "total_amount": 1332
+        },
+        {
+            "resource_id": "a6a16db6-5cdd-42cb-b595-96c9ff24a3b2",
+            "user_id": "iSHOWv6SC6XzClAp5v07yKxXHs83",
+            "user_name": "Jacob Smith",
+            "role_name": "PM",
+            "currency": "$",
+            "hourly_rate": 80,
+            "hours": 20,
+            "total_amount": 1600
+        }
+    ],
+    "billing_additions": [
+        {
+            "category": "tax",
+            "name": "G.S.T",
+            "value": 18
+        },
+        {
+            "category": "discount",
+            "name": "Corporate discount",
+            "value": 15
+        }
+    ],
+    "grand_total": {
+        "total_billable_amount": "2240.00",
+        "tax": "403.2",
+        "discount": "264",
+        "currency": "USD",
+        "ampunt": "2378.88"
+    }
+}

@@ -1,0 +1,559 @@
+dbms,TABLE_SCHEMA,TABLE_NAME,COLUMN_NAME,ORDINAL_POSITION,DATA_TYPE,CHARACTER_MAXIMUM_LENGTH,CONSTRAINT_TYPE,REFERENCED_TABLE_SCHEMA,REFERENCED_TABLE_NAME,REFERENCED_COLUMN_NAME
+mysql,sys,sys_config,variable,1,varchar,128,"PRIMARY KEY",NULL,NULL,NULL
+mysql,sys,sys_config,value,2,varchar,128,NULL,NULL,NULL,NULL
+mysql,sys,sys_config,set_time,3,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,sys,sys_config,set_by,4,varchar,128,NULL,NULL,NULL,NULL
+mysql,vmsback,archive_squad_request_external,request_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,archive_squad_request_external,user_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,archive_squad_request_external,squad_id,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,archive_squad_request_external,email,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,archive_squad_request_external,first_name,5,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,archive_squad_request_external,last_name,6,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,archive_squad_request_external,type,7,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,archive_squad_request_external,created_at,8,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,archive_squad_request_external,updated_at,9,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,member,member_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,member,squad_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,member,user_id,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,member,member_role,4,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,member,image_id,5,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,member,created_at,6,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,member,updated_at,7,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,otp,id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,otp,email,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,otp,otp,3,int,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,otp,created_at,4,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,otp,updated_at,5,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,project,project_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,project,squad_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,project,logo_id,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,project,name,4,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,project,category,5,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,project,description,6,varchar,255,NULL,NULL,NULL,NULL
+mysql,vmsback,project,project_status,7,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,project,percentage,8,int,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,project,candidature,9,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,project,skills,10,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,project,currency,11,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,project,budget,12,varchar,20,NULL,NULL,NULL,NULL
+mysql,vmsback,project,payment,13,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,project,start_date,14,date,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,project,end_date,15,date,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,project,created_at,16,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,project,updated_at,17,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,review,review_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,review,squad_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,review,user_id,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,review,rating,4,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,review,comment,5,varchar,255,NULL,NULL,NULL,NULL
+mysql,vmsback,review,created_at,6,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,review,updated_at,7,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,service,service_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,service,squad_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,service,info,3,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,service,service_name,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,service,software,5,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,service,primary_service,6,tinyint,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,service,logo_id,7,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,service,created_at,8,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,service,updated_at,9,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,squad_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,squad,squad_name,2,varchar,200,UNIQUE,NULL,NULL,NULL
+mysql,vmsback,squad,legal_name,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,type,4,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,category,5,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,tag_line,6,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,default_currency,7,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,city,8,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,state,9,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,country,10,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,rejected_array,11,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,hidden_array,12,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,order_array,13,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,established,14,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,ratings,15,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,speciality,16,varchar,255,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,industry,17,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,about_us,18,text,65535,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,vision,19,text,65535,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,core_values,20,text,65535,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,total_earning,21,int,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,net_earning,22,int,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,unreleased,23,int,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,facebook,24,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,twitter,25,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,linkedin,26,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,instagram,27,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,github,28,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,behance,29,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,dribble,30,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,pinterest,31,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,country_code,32,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,calling_code,33,varchar,5,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,contact_number,34,varchar,20,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,email_id,35,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,website,36,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,squad_completion,37,int,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,default_background_image_id,38,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,default_profile_image_id,39,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,created_at,40,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad,updated_at,41,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_alliance,alliance_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,squad_alliance,squad_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_alliance,logo_id,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_alliance,partner_name,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_alliance,partnership_id,5,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_alliance,description,6,text,65535,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_alliance,start_date,7,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_alliance,end_date,8,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_alliance,created_at,9,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_alliance,updated_at,10,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_background_image,bgimgid,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,squad_background_image,squad_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_background_image,bgimgname,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_background_image,bgimgurl,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_background_image,bgimgrotation,5,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_background_image,bgimgposition1,6,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_background_image,bgimgposition2,7,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_background_image,bgimgscale,8,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_background_image,bgimgrotationfocuspoint1,9,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_background_image,bgimgrotationfocuspoint2,10,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_background_image,created_at,11,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_background_image,updated_at,12,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_client,client_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,squad_client,squad_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_client,client_name,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_client,imgid,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_client,created_at,5,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_client,updated_at,6,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_client_image,imgid,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,squad_client_image,client_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_client_image,imgname,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_client_image,imgurl,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_client_image,imgrotation,5,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_client_image,imgposition1,6,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_client_image,imgposition2,7,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_client_image,imgscale,8,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_client_image,imgrotationfocuspoint1,9,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_client_image,imgrotationfocuspoint2,10,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_client_image,created_at,11,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_client_image,updated_at,12,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_member,member_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,squad_member,squad_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_member,user_id,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_member,member_role,4,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_member,image_id,5,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_member,created_at,6,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_member,updated_at,7,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_member_request,request_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,squad_member_request,squad_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_member_request,user_id,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_member_request,request_status,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_member_request,created_at,5,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_member_request,updated_at,6,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_partner,partner_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,squad_partner,squad_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_partner,partner_squad_id,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_partner,created_at,4,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_partner,updated_at,5,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_profile_image,profimgid,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,squad_profile_image,squad_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_profile_image,profimgname,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_profile_image,profimgurl,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_profile_image,profimgrotation,5,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_profile_image,profimgposition1,6,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_profile_image,profimgposition2,7,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_profile_image,profimgscale,8,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_profile_image,profimgrotationfocuspoint1,9,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_profile_image,profimgrotationfocuspoint2,10,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_profile_image,created_at,11,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_profile_image,updated_at,12,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_project,project_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,squad_project,squad_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_project,logo_id,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_project,name,4,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_project,category,5,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_project,description,6,text,65535,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_project,project_status,7,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_project,percentage,8,int,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_project,candidature,9,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_project,skills,10,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_project,currency,11,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_project,budget,12,varchar,20,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_project,payment,13,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_project,start_date,14,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_project,end_date,15,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_project,created_at,16,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_project,updated_at,17,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_request_external,request_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,squad_request_external,user_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_request_external,squad_id,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_request_external,email,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_request_external,first_name,5,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_request_external,last_name,6,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_request_external,type,7,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_request_external,isValid,8,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_request_external,request_status,9,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_request_external,created_at,10,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_request_external,updated_at,11,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_review,review_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,squad_review,squad_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_review,user_id,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_review,rating,4,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_review,comment,5,varchar,255,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_review,created_at,6,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_review,updated_at,7,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_service,service_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,squad_service,squad_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_service,info,3,text,65535,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_service,service_name,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_service,software,5,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_service,primary_service,6,tinyint,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_service,logo_id,7,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_service,created_at,8,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_service,updated_at,9,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_temp_image,temp_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,squad_temp_image,user_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_temp_image,imgname,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_temp_image,imgurl,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_temp_image,imgrotation,5,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_temp_image,imgposition1,6,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_temp_image,imgposition2,7,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_temp_image,imgscale,8,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_temp_image,imgrotationfocuspoint1,9,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_temp_image,imgrotationfocuspoint2,10,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_temp_image,created_at,11,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,squad_temp_image,updated_at,12,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,table1,table_id,1,varchar,250,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,table1,id,2,varchar,250,NULL,NULL,NULL,NULL
+mysql,vmsback,table1,amount,3,varchar,250,NULL,NULL,NULL,NULL
+mysql,vmsback,table1,email_id,4,varchar,250,NULL,NULL,NULL,NULL
+mysql,vmsback,table1,success,5,varchar,250,NULL,NULL,NULL,NULL
+mysql,vmsback,table1,failed,6,varchar,250,NULL,NULL,NULL,NULL
+mysql,vmsback,table1,pending,7,varchar,250,NULL,NULL,NULL,NULL
+mysql,vmsback,table1,createdTime,8,varchar,250,NULL,NULL,NULL,NULL
+mysql,vmsback,table1,created_at,9,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,table1,updated_at,10,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_background_image,bgimgid,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,user_background_image,profile_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_background_image,bgimgname,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_background_image,bgimgurl,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_background_image,bgimgrotation,5,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_background_image,bgimgposition1,6,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_background_image,bgimgposition2,7,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_background_image,bgimgscale,8,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_background_image,bgimgrotationfocuspoint1,9,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_background_image,bgimgrotationfocuspoint2,10,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_background_image,created_at,11,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_background_image,updated_at,12,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_education,education_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,user_education,user_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_education,logo_id,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_education,name,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_education,course,5,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_education,field,6,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_education,description,7,text,65535,NULL,NULL,NULL,NULL
+mysql,vmsback,user_education,start_date,8,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_education,end_date,9,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_education,created_at,10,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_education,updated_at,11,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_experience,experience_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,user_experience,user_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_experience,logo_id,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_experience,name,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_experience,post,5,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_experience,employment_type,6,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_experience,description,7,text,65535,NULL,NULL,NULL,NULL
+mysql,vmsback,user_experience,end_date,8,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_experience,start_date,9,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_experience,created_at,10,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_experience,updated_at,11,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_handle,id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,user_handle,handle,2,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,user_handle,create_time,3,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_handle,update_time,4,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_image,imageid,1,varchar,100,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,user_image,id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_image,img_stored,3,varchar,2,NULL,NULL,NULL,NULL
+mysql,vmsback,user_image,image_name,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_image,purpose,5,varchar,2,NULL,NULL,NULL,NULL
+mysql,vmsback,user_image,image_url,6,varchar,250,NULL,NULL,NULL,NULL
+mysql,vmsback,user_image,create_time,7,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_image,update_time,8,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_image,comments,9,varchar,255,NULL,NULL,NULL,NULL
+mysql,vmsback,user_interest,interest_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,user_interest,user_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_interest,logo_id,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_interest,name,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_interest,type,5,text,65535,NULL,NULL,NULL,NULL
+mysql,vmsback,user_interest,created_at,6,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_interest,updated_at,7,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_language,language_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,user_language,user_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_language,language,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_language,medium,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_language,level,5,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_language,created_at,6,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_language,updated_at,7,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_license,license_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,user_license,user_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_license,logo_id,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_license,name,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_license,license_number,5,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_license,issuing_authority,6,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_license,description,7,text,65535,NULL,NULL,NULL,NULL
+mysql,vmsback,user_license,start_date,8,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_license,end_date,9,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_license,created_at,10,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_license,updated_at,11,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,profile_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,user_profile,user_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,order_array,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,rejected_array,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,multiple_array,5,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,hidden_array,6,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,default_currency,7,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,profession,8,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,company_name,9,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,city,10,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,state,11,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,country,12,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,followers,13,int,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,projects,14,int,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,squads,15,int,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,profile_completion,16,int,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,about_me,17,text,65535,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,core_values,18,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,total_earning,19,int,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,net_earning,20,int,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,unreleased,21,int,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,facebook,22,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,twitter,23,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,linkedin,24,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,instagram,25,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,github,26,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,behance,27,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,dribble,28,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,pinterest,29,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,country_code,30,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,calling_code,31,varchar,5,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,contact_number,32,varchar,20,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,email_id,33,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,website,34,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,default_background_image_id,35,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,default_profile_image_id,36,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,created_at,37,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile,updated_at,38,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile_image,profimgid,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,user_profile_image,profile_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile_image,profimgname,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile_image,profimgurl,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile_image,profimgrotation,5,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile_image,profimgposition1,6,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile_image,profimgposition2,7,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile_image,profimgscale,8,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile_image,profimgrotationfocuspoint1,9,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile_image,profimgrotationfocuspoint2,10,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile_image,created_at,11,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_profile_image,updated_at,12,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_proj_master,id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,user_proj_master,filled,2,varchar,10,NULL,NULL,NULL,NULL
+mysql,vmsback,user_proj_master,complete,3,varchar,10,NULL,NULL,NULL,NULL
+mysql,vmsback,user_proj_master,ongoing,4,varchar,10,NULL,NULL,NULL,NULL
+mysql,vmsback,user_proj_master,in_line,5,varchar,10,NULL,NULL,NULL,NULL
+mysql,vmsback,user_proj_master,item_no,6,varchar,10,NULL,NULL,NULL,NULL
+mysql,vmsback,user_proj_master,create_time,7,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_proj_master,update_time,8,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_project,project_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,user_project,user_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_project,logo_id,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_project,name,4,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,user_project,category,5,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,user_project,description,6,text,65535,NULL,NULL,NULL,NULL
+mysql,vmsback,user_project,project_status,7,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,user_project,candidature,8,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,user_project,skills,9,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,user_project,currency,10,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,user_project,budget,11,varchar,20,NULL,NULL,NULL,NULL
+mysql,vmsback,user_project,payment,12,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,user_project,start_date,13,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_project,end_date,14,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_project,created_at,15,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_project,updated_at,16,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_resume,id,1,int,NULL,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,user_resume,job_profile,2,varchar,255,NULL,NULL,NULL,NULL
+mysql,vmsback,user_resume,descr,3,varchar,255,NULL,NULL,NULL,NULL
+mysql,vmsback,user_resume,resume_name,4,varchar,255,NULL,NULL,NULL,NULL
+mysql,vmsback,user_resume,dest_filename,5,varchar,255,NULL,NULL,NULL,NULL
+mysql,vmsback,user_resume,create_time,6,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_resume,update_time,7,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_resume,user_id,8,varchar,255,NULL,NULL,NULL,NULL
+mysql,vmsback,user_review,review_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,user_review,profile_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_review,user_id,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_review,rating,4,float,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_review,comment,5,varchar,255,NULL,NULL,NULL,NULL
+mysql,vmsback,user_review,created_at,6,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_review,updated_at,7,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_skill,skill_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,user_skill,user_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_skill,logo_id,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_skill,name,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_skill,description,5,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_skill,proficiency,6,int,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_skill,duration,7,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_skill,created_at,8,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_skill,updated_at,9,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_skills,id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,user_skills,skillid,2,varchar,100,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,user_skills,logo,3,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,user_skills,skillname,4,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,user_skills,descrip,5,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_skills,duration,6,varchar,50,NULL,NULL,NULL,NULL
+mysql,vmsback,user_skills,percentage,7,varchar,3,NULL,NULL,NULL,NULL
+mysql,vmsback,user_skills,create_time,8,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_skills,update_time,9,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_visa,visa_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,user_visa,user_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_visa,logo_id,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_visa,name,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_visa,type,5,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_visa,credential_id,6,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_visa,issuing_authority,7,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_visa,start_date,8,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_visa,end_date,9,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,user_visa,created_at,10,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,user_visa,updated_at,11,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,users,id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,users,email,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,users,displayname,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,users,firstname,4,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,users,lastname,5,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,users,photourl,6,varchar,255,NULL,NULL,NULL,NULL
+mysql,vmsback,users,signinprov,7,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,users,password,8,varchar,20,NULL,NULL,NULL,NULL
+mysql,vmsback,users,companyname,9,varchar,100,NULL,NULL,NULL,NULL
+mysql,vmsback,users,phone,10,varchar,20,NULL,NULL,NULL,NULL
+mysql,vmsback,users,create_time,11,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,users,update_time,12,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,users,linkedinurl,13,varchar,255,NULL,NULL,NULL,NULL
+mysql,vmsback,users,logintype,14,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work,work_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,work,squad_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work,work_title,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work,industry,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work,description,5,text,65535,NULL,NULL,NULL,NULL
+mysql,vmsback,work,state,6,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work,country,7,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work,project_type,8,int,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work,projectHR_currency,9,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work,projectHR_amount,10,int,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work,fixedHR_currency,11,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work,fixedHR_amount,12,int,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work,billing_currency,13,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work,project_payment_frequency,14,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work,payment_terms,15,int,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work,start_date,16,date,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work,end_date,17,date,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work,work_status,18,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work,sharing,19,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work,completion_status,20,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work,created_at,21,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work,updated_at,22,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application,application_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,work_application,work_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application,squad_id,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application,application_status,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application,complete,5,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application,created_at,6,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application,updated_at,7,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_answer,answer_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,work_application_answer,application_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_answer,questionnaire_id,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_answer,type_answer,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_answer,answer,5,text,65535,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_answer,created_at,6,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_answer,updated_at,7,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_attachment,attachment_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,work_application_attachment,application_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_attachment,file_name,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_attachment,file_url,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_attachment,file_type,5,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_attachment,created_at,6,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_attachment,updated_at,7,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_counter,counter_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,work_application_counter,application_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_counter,resource_id,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_counter,new_rate,4,int,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_counter,new_currency,5,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_counter,resource_change,6,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_counter,rate_change,7,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_counter,created_at,8,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_counter,updated_at,9,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_resource,resource_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,work_application_resource,application_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_resource,user_id,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_resource,role_name,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_resource,currency,5,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_resource,amount,6,int,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_resource,counter,7,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_resource,created_at,8,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_application_resource,updated_at,9,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_bookmark,bookmark_id,1,varchar,255,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,work_bookmark,work_id,2,varchar,255,NULL,NULL,NULL,NULL
+mysql,vmsback,work_bookmark,squad_id,3,varchar,255,NULL,NULL,NULL,NULL
+mysql,vmsback,work_bookmark,created_at,4,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_bookmark,updated_at,5,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_fixedFee_milestone,milestone_id,1,varchar,255,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,work_fixedFee_milestone,work_id,2,varchar,255,NULL,NULL,NULL,NULL
+mysql,vmsback,work_fixedFee_milestone,name,3,varchar,255,NULL,NULL,NULL,NULL
+mysql,vmsback,work_fixedFee_milestone,currency,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_fixedFee_milestone,amount,5,int,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_fixedFee_milestone,description,6,text,65535,NULL,NULL,NULL,NULL
+mysql,vmsback,work_fixedFee_milestone,created_at,7,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_fixedFee_milestone,updated_at,8,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_option,option_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,work_option,question_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_option,option_value,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_option,created_at,4,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_option,updated_at,5,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_question,question_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,work_question,work_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_question,question,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_question,question_type,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_question,options,5,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_question,created_at,6,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_question,updated_at,7,datetime,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_questionnaire,questionnaire_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,work_questionnaire,work_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_questionnaire,question,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_questionnaire,type,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_questionnaire,options,5,varchar,500,NULL,NULL,NULL,NULL
+mysql,vmsback,work_questionnaire,created_at,6,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_questionnaire,updated_at,7,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_resource,resource_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,work_resource,work_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_resource,role_name,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_resource,currency,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_resource,amount,5,int,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_resource,created_at,6,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_resource,updated_at,7,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_shared,share_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,work_shared,work_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_shared,squad_id,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_shared,work_request_status,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_shared,created_at,5,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_shared,updated_at,6,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_shared_external,external_share_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,work_shared_external,work_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_shared_external,email,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_shared_external,company_name,4,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_shared_external,recipient_name,5,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_shared_external,isValid,6,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_shared_external,created_at,7,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_shared_external,updated_at,8,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_skill,skill_id,1,varchar,200,"PRIMARY KEY",NULL,NULL,NULL
+mysql,vmsback,work_skill,work_id,2,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_skill,skill_name,3,varchar,200,NULL,NULL,NULL,NULL
+mysql,vmsback,work_skill,created_at,4,timestamp,NULL,NULL,NULL,NULL,NULL
+mysql,vmsback,work_skill,updated_at,5,timestamp,NULL,NULL,NULL,NULL,NULL
